@@ -1,0 +1,73 @@
+# ----------------------------------------------------------------------
+# 1. PYTHON AND ENVIRONMENT EXCLUSIONS
+# ----------------------------------------------------------------------
+
+# Compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.so
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+/tmp
+
+# Installer logs
+pip-log.txt
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+
+
+# ----------------------------------------------------------------------
+# 2. IDE AND EDITOR EXCLUSIONS
+# ----------------------------------------------------------------------
+
+# Visual Studio Code
+.vscode/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Spyder
+.spyproject/
+
+# Vim/Nano swap files
+*~
+*.swp
+*.bak
+
+
+# ----------------------------------------------------------------------
+# 3. MACHINE LEARNING & DATA EXCLUSIONS (CRITICAL!)
+# ----------------------------------------------------------------------
+
+# Trained Models (Large Binary Files)
+# These should be versioned via specific tools like DVC, not Git.
+*.joblib
+*.pkl
+*.h5
+*.tf
+*.pth
+
+# Large Data Files (Raw, Intermediate, or Generated)
+# Do NOT store large datasets directly on GitHub.
+*.csv
+*.zip
+*.parquet
+*.jsonl
+*.data  # Specifically for your project's raw data file
+/data/
+/datasets/
+
+# ----------------------------------------------------------------------
+# 4. NOTEBOOK OUTPUT & LOGS
+# ----------------------------------------------------------------------
+# Logs and outputs that don't need to be tracked
+*.log
+/logs/
+/results/
